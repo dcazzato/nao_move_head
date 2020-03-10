@@ -1,0 +1,17 @@
+<!-- Launcher: obstacle_hpe_ros -->
+<launch>
+
+  <arg name="subscriber_hpe" default="/obstacle_hpe/headposeRadNAO"/>
+  <arg name="fractionMaxSpeedYaw" default="0.3"/>
+  <arg name="fractionMaxSpeedPitch" default="0.3"/>
+  <arg name="robotIP" default="127.0.0.1"/>
+
+  <node name="headmove" pkg="nao_move_head" type="headmove.py" output="screen">
+	<param name="subscriber_hpe" value="$(arg subscriber_hpe)" type="string"/>
+    <param name="fractionMaxSpeedYaw" value="$(arg fractionMaxSpeedYaw)"/>
+    <param name="fractionMaxSpeedPitch" value="$(arg fractionMaxSpeedPitch)"/>
+    <param name="robotIP" value="$(arg robotIP)"/>
+
+  </node>
+
+</launch>

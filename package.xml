@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <name>nao_move_head</name>
+  <version>0.1.1</version>
+  <description>Move head in ROS with NAOqi API</description>
+  <maintainer email="dario.cazzato@uni.lu">Dario Cazzato</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>std_msgs</run_depend>  
+  <build_depend>message_runtime</build_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <run_depend>actionlib</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>humanoid_nav_msgs</run_depend>
+  <run_depend>naoqi_apps</run_depend>
+  <run_depend>naoqi_navigation</run_depend>
+  <run_depend>naoqi_sensors_py</run_depend>
+  <run_depend>naoqi_tools</run_depend>
+  <run_depend>naoqi_bridge_msgs</run_depend>
+  <run_depend>naoqi_driver</run_depend>
+  <run_depend>naoqi_driver_py</run_depend>
+  <run_depend>naoqi_pose</run_depend>
+  <run_depend>rospy</run_depend>
+
+  <run_depend>std_srvs</run_depend>
+
+  <test_depend>trajectory_msgs</test_depend>
+
+</package>
